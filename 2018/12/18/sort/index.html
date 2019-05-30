@@ -104,25 +104,40 @@
 
 
 
-  <meta name="description" content="堆 小根堆中最大的数一定是放在叶子节点上，堆本身是个完全二叉树，完全二叉树的叶子节点的位置大于[n/2]；  栈 链表 特点;  插入、删除操作不需要移动元素 无需事先估计存储空间大小 所需存储空间与线性表长度成正比 不可随机访问任何一个元素   判断一个单向链表中是否存在环的最佳方法是快慢指针；    矩阵 稀疏矩阵一般的压缩存储方式有两种，即三元组和十字链表 ； 在一般情况下，采用压缩存储后，">
+  <meta name="description" content="排序方法总结 – 排序过程各种排序算法的稳定性，时间复杂度，空间复杂度总结：    类别 排序方法 平均 最好 最坏 辅助存储 稳定性     插入排序 直接插入 O(n2) O(n) O(n2) O(1) 稳定    shell排序 O(n1,3) O(n) O(n2) O(1) 不稳定   选择排序 直接选择 O(n2) O(n2) O(n2) O1) 不稳定    堆排序 O(nlog2n)">
 <meta name="keywords" content="-成长 -学习 -搬砖">
 <meta property="og:type" content="article">
-<meta property="og:title" content="凌乱的知识点">
-<meta property="og:url" content="https://chen-sisi.github.io/2018/12/18/Tips/index.html">
+<meta property="og:title" content="排序方法">
+<meta property="og:url" content="https://chen-sisi.github.io/2018/12/18/sort/index.html">
 <meta property="og:site_name" content="认真搬砖">
-<meta property="og:description" content="堆 小根堆中最大的数一定是放在叶子节点上，堆本身是个完全二叉树，完全二叉树的叶子节点的位置大于[n/2]；  栈 链表 特点;  插入、删除操作不需要移动元素 无需事先估计存储空间大小 所需存储空间与线性表长度成正比 不可随机访问任何一个元素   判断一个单向链表中是否存在环的最佳方法是快慢指针；    矩阵 稀疏矩阵一般的压缩存储方式有两种，即三元组和十字链表 ； 在一般情况下，采用压缩存储后，">
+<meta property="og:description" content="排序方法总结 – 排序过程各种排序算法的稳定性，时间复杂度，空间复杂度总结：    类别 排序方法 平均 最好 最坏 辅助存储 稳定性     插入排序 直接插入 O(n2) O(n) O(n2) O(1) 稳定    shell排序 O(n1,3) O(n) O(n2) O(1) 不稳定   选择排序 直接选择 O(n2) O(n2) O(n2) O1) 不稳定    堆排序 O(nlog2n)">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-24T14:38:27.177Z">
+<meta property="og:image" content="c:/Users/陈思思/AppData/Roaming/Typora/typora-user-images/1559184117389.png">
+<meta property="og:image" content="c:/Users/陈思思/AppData/Roaming/Typora/typora-user-images/1559184425139.png">
+<meta property="og:image" content="c:/Users/陈思思/AppData/Roaming/Typora/typora-user-images/1559184918623.png">
+<meta property="og:image" content="c:/Users/陈思思/AppData/Roaming/Typora/typora-user-images/1559183223623.png">
+<meta property="og:image" content="c:/Users/陈思思/AppData/Roaming/Typora/typora-user-images/1559183293548.png">
+<meta property="og:image" content="c:/Users/陈思思/AppData/Roaming/Typora/typora-user-images/1559183306767.png">
+<meta property="og:image" content="c:/Users/陈思思/AppData/Roaming/Typora/typora-user-images/1559183536396.png">
+<meta property="og:image" content="c:/Users/陈思思/AppData/Roaming/Typora/typora-user-images/1559183549210.png">
+<meta property="og:image" content="c:/Users/陈思思/AppData/Roaming/Typora/typora-user-images/1559183611375.png">
+<meta property="og:image" content="c:/Users/陈思思/AppData/Roaming/Typora/typora-user-images/1559185407984.png">
+<meta property="og:image" content="c:/Users/陈思思/AppData/Roaming/Typora/typora-user-images/1559185877853.png">
+<meta property="og:image" content="c:/Users/陈思思/AppData/Roaming/Typora/typora-user-images/1559186472163.png">
+<meta property="og:image" content="c:/Users/陈思思/AppData/Roaming/Typora/typora-user-images/1559186492300.png">
+<meta property="og:image" content="c:/Users/陈思思/AppData/Roaming/Typora/typora-user-images/1559186647827.png">
+<meta property="og:updated_time" content="2019-05-30T03:28:44.296Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="凌乱的知识点">
-<meta name="twitter:description" content="堆 小根堆中最大的数一定是放在叶子节点上，堆本身是个完全二叉树，完全二叉树的叶子节点的位置大于[n/2]；  栈 链表 特点;  插入、删除操作不需要移动元素 无需事先估计存储空间大小 所需存储空间与线性表长度成正比 不可随机访问任何一个元素   判断一个单向链表中是否存在环的最佳方法是快慢指针；    矩阵 稀疏矩阵一般的压缩存储方式有两种，即三元组和十字链表 ； 在一般情况下，采用压缩存储后，">
+<meta name="twitter:title" content="排序方法">
+<meta name="twitter:description" content="排序方法总结 – 排序过程各种排序算法的稳定性，时间复杂度，空间复杂度总结：    类别 排序方法 平均 最好 最坏 辅助存储 稳定性     插入排序 直接插入 O(n2) O(n) O(n2) O(1) 稳定    shell排序 O(n1,3) O(n) O(n2) O(1) 不稳定   选择排序 直接选择 O(n2) O(n2) O(n2) O1) 不稳定    堆排序 O(nlog2n)">
+<meta name="twitter:image" content="c:/Users/陈思思/AppData/Roaming/Typora/typora-user-images/1559184117389.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://chen-sisi.github.io/2018/12/18/Tips/">
+  <link rel="canonical" href="https://chen-sisi.github.io/2018/12/18/sort/">
 
 
 
@@ -132,7 +147,7 @@
   };
 </script>
 
-  <title>凌乱的知识点 | 认真搬砖</title>
+  <title>排序方法 | 认真搬砖</title>
   
 
 
@@ -368,7 +383,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://chen-sisi.github.io/2018/12/18/Tips/">
+    <link itemprop="mainEntityOfPage" href="https://chen-sisi.github.io/2018/12/18/sort/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="sisi-Chen">
@@ -385,7 +400,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">凌乱的知识点
+          <h1 class="post-title" itemprop="name headline">排序方法
 
               
             
@@ -428,7 +443,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-24 22:38:27" itemprop="dateModified" datetime="2019-05-24T22:38:27+08:00">2019-05-24</time>
+                <time title="修改时间：2019-05-30 11:28:44" itemprop="dateModified" datetime="2019-05-30T11:28:44+08:00">2019-05-30</time>
               
             
           </span>
@@ -445,7 +460,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/杂七杂八/" itemprop="url" rel="index"><span itemprop="name">-杂七杂八</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/数据结构/" itemprop="url" rel="index"><span itemprop="name">-数据结构</span></a></span>
 
                 
                 
@@ -479,94 +494,132 @@
       
 
       
-        <h1 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h1><ul>
-<li><strong>小根堆</strong>中最大的数一定是放在叶子节点上，堆本身是个完全二叉树，完全二叉树的叶子节点的位置大于<strong>[n/2]</strong>；</li>
-</ul>
-<h1 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h1><ul>
-<li><h1 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h1></li>
-<li><p>特点;</p>
+        <h1 id="排序方法总结-–-排序过程"><a href="#排序方法总结-–-排序过程" class="headerlink" title="排序方法总结 – 排序过程"></a>排序方法总结 – 排序过程</h1><p>各种排序算法的稳定性，时间复杂度，空间复杂度总结：</p>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>排序方法</th>
+<th>平均</th>
+<th>最好</th>
+<th>最坏</th>
+<th>辅助存储</th>
+<th>稳定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>插入排序</td>
+<td>直接插入</td>
+<td>O(n<sup>2</sup>)</td>
+<td>O(n)</td>
+<td>O(n<sup>2</sup>)</td>
+<td>O(1)</td>
+<td>稳定</td>
+</tr>
+<tr>
+<td></td>
+<td>shell排序</td>
+<td>O(n<sup>1,3</sup>)</td>
+<td>O(n)</td>
+<td>O(n<sup>2</sup>)</td>
+<td>O(1)</td>
+<td>不稳定</td>
+</tr>
+<tr>
+<td>选择排序</td>
+<td>直接选择</td>
+<td>O(n<sup>2</sup>)</td>
+<td>O(n<sup>2</sup>)</td>
+<td>O(n<sup>2</sup>)</td>
+<td>O1)</td>
+<td>不稳定</td>
+</tr>
+<tr>
+<td></td>
+<td>堆排序</td>
+<td>O(nlog2n)</td>
+<td>O(nlog<sub>2</sub>n)</td>
+<td>O(nlog<sub>2</sub>n)</td>
+<td>O(1)</td>
+<td>不稳定</td>
+</tr>
+<tr>
+<td>交换排序</td>
+<td>冒泡排序</td>
+<td>O(n<sup>2</sup>)</td>
+<td>O(n)</td>
+<td>O(n<sup>2</sup>)</td>
+<td>O(1)</td>
+<td>稳定</td>
+</tr>
+<tr>
+<td></td>
+<td>快速排序</td>
+<td>O(nlog<sub>2</sub>n)</td>
+<td>O(nlog<sub>2</sub>n)</td>
+<td>O(n<sup>2</sup>)</td>
+<td>O(nlog<sub>2</sub>n)</td>
+<td>不稳定</td>
+</tr>
+<tr>
+<td></td>
+<td>归并排序</td>
+<td>O(nlog<sub>2</sub>n)</td>
+<td>O(nlog<sub>2</sub>n)</td>
+<td>O(nlog<sub>2</sub>n)</td>
+<td>O(n)</td>
+<td>稳定</td>
+</tr>
+<tr>
+<td></td>
+<td>基数排序</td>
+<td>O(d(r+n))</td>
+<td>O(d(r+n))</td>
+<td>O(d(r+n))</td>
+<td>O(rd+n)</td>
+<td>稳定</td>
+</tr>
+</tbody>
+</table>
+<h2 id="直接插入"><a href="#直接插入" class="headerlink" title="直接插入"></a>直接插入</h2><p>直接插入排序的基本思想是：把n个待排序的元素看成为一个有序表和一个无序表。</p>
+<p>开始时有序表中只包含1个元素，无序表中包含有n-1个元素，排序过程中每次从无序表中取出第一个元素，将它插入到有序表中的适当位置，使之成为新的有序表，重复n-1次可完成排序过程。</p>
+<p><img src="C:\Users\陈思思\AppData\Roaming\Typora\typora-user-images\1559184117389.png" alt="1559184117389"></p>
+<h2 id="shell-排序"><a href="#shell-排序" class="headerlink" title="shell 排序"></a>shell 排序</h2><p>shell排序的基本思想是：</p>
 <ul>
-<li>插入、删除操作不需要移动元素</li>
-<li><strong>无需</strong>事先估计存储空间大小</li>
-<li>所需存储空间与线性表长度成<strong>正比</strong></li>
-<li><strong>不可随机</strong>访问任何一个元素</li>
+<li>先取一个小于n的整数d1作为第一个增量，把文件的全部记录分成d1个组。</li>
+<li>所有距离为dl的倍数的记录放在同一个组中。</li>
+<li>先在各组内进行直接插入排序；</li>
+<li>取第二个增量d2&lt;d1重复上述的分组和排序，直至所取的增量dt=1(dt&lt;dt-l&lt;；…&lt;d2&lt;d1），即所有记录放在同一组中进行直接插入排序为止。</li>
 </ul>
-</li>
-<li><p>判断一个单向链表中是否存在环的最佳方法是<strong>快慢指针</strong>；</p>
-</li>
-<li></li>
-</ul>
-<h1 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h1><ul>
-<li><strong>稀疏矩阵</strong>一般的压缩存储方式有两种，即<strong>三元组和十字链表</strong> ；</li>
-<li>在一般情况下，采用压缩存储后，<strong>稀疏矩阵</strong>是所有特殊矩阵中<strong>存储空间节约最多</strong>的；</li>
-</ul>
-<h1 id="树"><a href="#树" class="headerlink" title="树"></a>树</h1><ul>
-<li><strong>n阶B-树</strong>是一课n叉<strong>平衡排序树</strong>；</li>
-<li>若二叉树采用<strong>二叉链</strong>表存储结构,要<strong>交换</strong>其所有分支结点<strong>左、右子树</strong>的位置,利用<strong>后序遍历</strong>方法最合适</li>
-</ul>
-<h1 id="哈夫曼编码（树）"><a href="#哈夫曼编码（树）" class="headerlink" title="哈夫曼编码（树）"></a>哈夫曼编码（树）</h1><ul>
-<li>使用哈夫曼算法进行编码，编码<strong>值</strong>可以有<strong>多套</strong>，但每个字符编码的<strong>位（bit）数是确定</strong>的；</li>
-<li>使用哈夫曼算法编码后，用编码值来存储文本将<strong>花费最少的存储空间</strong>（都为最优解）；</li>
-<li><strong>次数最小</strong>的应该放在<strong>最底层叶子节点</strong>，<strong>次数最大</strong>的应该<strong>最接近根节点</strong>；</li>
-</ul>
-<h1 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h1><ul>
-<li>输入若已经是<strong>排好序</strong>的，下列排序算法最快的是<strong>插入排序</strong>；</li>
-</ul>
-<h1 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h1><ul>
-<li>模式串的长度是m，主串的长度是n（m&lt;n），使用<strong>KMP算法</strong>匹配的时间复杂度是<strong>O(m+n)</strong>；</li>
-</ul>
-<h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><ul>
-<li>在数据库的安全控制中，为了保证用户只能存取他有权存取的数据，在授权的定义中，<strong>数据对象的范围越小</strong>，授权子系统就越<strong>灵活</strong>；</li>
-<li><strong>TRUNCATE TABLE</strong> ：约束依然存在；</li>
-</ul>
-<h1 id="进程线程"><a href="#进程线程" class="headerlink" title="进程线程"></a>进程线程</h1><ul>
-<li><strong>进程</strong>是<strong>资源分配</strong>的最小单位，<strong>线程</strong>是<strong>资源调度</strong>的最小单位；</li>
-<li>信号量为<strong>-m</strong>，就是有<strong>m个</strong>进程在等待，一共m+1个进程，还有一个已经进入临界区；</li>
-<li>由于<strong>独占设备</strong>在一段时间内只允许一个进程使用，因此，多个并发进程无法同时使用这类设备；</li>
-<li>同一进程下的多个线程可以共享<strong>data section</strong>资源；</li>
-<li><p><strong>进程阻塞</strong>原因：</p>
-<ul>
-<li>等待I/O</li>
-<li>进程sleep</li>
-<li>等待解锁</li>
-</ul>
-</li>
-<li><p><strong>减少换页错误</strong>：访问局部性（locality of reference）满足进程要求</p>
-</li>
-</ul>
-<h1 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a>IP地址</h1><ul>
-<li>保留IP地址：1个A类地址   10.<em>.</em>.<em>；–  16个B类地址  172.16.</em>.<em>—172.31.</em>.<em>256个C类地址 192.168.0.</em>—192.168.255.*；保留IP地址<strong>不会</strong>在internet网上出现，用于企业网络，A企业可以用,B企业也可以使用；</li>
-</ul>
-<h1 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h1><ul>
-<li><strong>RIP 协议</strong>适用于基于 IP 的<strong>中小型网络</strong>；</li>
-<li><strong>RSA</strong>：（公加密私解密），加密过程中，使用公钥对信息进行加密；解密过程中，使用私钥对信息进行解密；</li>
-<li><p>在网络<strong>7层</strong>协议中：<strong>UDP、TCP</strong>在<strong>会话层</strong>；</p>
-</li>
-<li></li>
-</ul>
-<h1 id="散列函数"><a href="#散列函数" class="headerlink" title="散列函数"></a>散列函数</h1><ul>
-<li>整数关键码k散列到大小为N的散列表：<strong>h(k)=((k mod N)+N)mod N</strong> 散列函数是最好；</li>
-<li></li>
-</ul>
-<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><ul>
-<li>Linux文件权限一共10位长度，分成四段：<ul>
-<li>第一段：<strong>文件类型部分</strong></li>
-<li>第二段：<strong>拥有者</strong>具有可读可写可执行的权限  </li>
-<li>第三段：<strong>文件所有者所在组</strong>的权限</li>
-<li>第四段：<strong>其他人</strong>对于这个文件没有任何权限</li>
-</ul>
-</li>
-<li>文件系统的<strong>inode</strong><ul>
-<li>node和文件<strong>不是</strong>一一对应的</li>
-<li>inode描述了文件大小和指向数据块的指针</li>
-<li>通过inode可获得文件占用的块数</li>
-<li>通过inode可实现文件的逻辑结构和物理结构的转换</li>
-</ul>
-</li>
-<li><strong>/etc</strong>：主机特定的系统配置</li>
-<li><strong>wc ‐l</strong>  –  统计一个文件中的行数</li>
-<li><strong>chmod</strong> – 可执行权限</li>
-</ul>
+<p><img src="C:\Users\陈思思\AppData\Roaming\Typora\typora-user-images\1559184425139.png" alt="1559184425139"></p>
+<h2 id="直接选择排序"><a href="#直接选择排序" class="headerlink" title="直接选择排序"></a>直接选择排序</h2><p>直接选择排序的基本思想：每一趟从待排序的数据元素中选出最小（最大）的元素，顺序放在待排序的数列最前，直到全部待排序的数据元素全部排完。</p>
+<p><img src="C:\Users\陈思思\AppData\Roaming\Typora\typora-user-images\1559184918623.png" alt="1559184918623"></p>
+<h2 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h2><p>堆分为最大堆和最小堆，其实就是完全二叉树。</p>
+<p><strong>最大堆</strong>要求节点的元素都要不小于其孩子，<strong>最小堆</strong>要求节点元素都不大于其左右孩子，两者对左右孩子的大小关系不做任何要求。<em>（基本要求）</em></p>
+<p>堆排序算法：每次都取堆顶的元素，将其放在序列最后面，然后将剩余的元素重新调整为最大堆，依次类推，最终得到排序的序列。</p>
+<p>举例：给定一个列表 arr = [16,7,3,20,17,8]，对其进行排序：</p>
+<p>第一步：构建完全二叉树：</p>
+<p><img src="C:\Users\陈思思\AppData\Roaming\Typora\typora-user-images\1559183223623.png" alt="1559183223623"></p>
+<p>第二步：初始化最大堆（满足基本条件：节点的元素都要不小于其孩子）：</p>
+<p><img src="C:\Users\陈思思\AppData\Roaming\Typora\typora-user-images\1559183293548.png" alt="1559183293548"></p>
+<p><img src="C:\Users\陈思思\AppData\Roaming\Typora\typora-user-images\1559183306767.png" alt="1559183306767"></p>
+<p>第三步：堆排序开始（取堆顶的元素，将其放在序列最后面，再调整为最大堆）：</p>
+<p><img src="C:\Users\陈思思\AppData\Roaming\Typora\typora-user-images\1559183536396.png" alt="1559183536396"></p>
+<p><img src="C:\Users\陈思思\AppData\Roaming\Typora\typora-user-images\1559183549210.png" alt="1559183549210"></p>
+<p>重复直到排序结束：</p>
+<p><img src="C:\Users\陈思思\AppData\Roaming\Typora\typora-user-images\1559183611375.png" alt="1559183611375"></p>
+<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><p>冒泡排序的基本思想：比较两两相邻的关键字，如果反序则进行交换，直到没有反序的为止。</p>
+<p><img src="C:\Users\陈思思\AppData\Roaming\Typora\typora-user-images\1559185407984.png" alt="1559185407984"></p>
+<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><p>由冒泡排序演变而来，比冒泡高效，之所以高效是因为使用了分治法。</p>
+<p>基本思想：在每一轮挑选一个基准元素，并让其他比它大的元素移动到数列一边，比它小的元素移动到数列的另一边，从而把数列拆解成了两个部分。</p>
+<p><img src="C:\Users\陈思思\AppData\Roaming\Typora\typora-user-images\1559185877853.png" alt="1559185877853"></p>
+<h2 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h2><p>将两个的有序数列合并成一个有序数列，我们称之为”<strong>归并</strong>“。<br>归并排序就是利用归并思想对数列进行排序。根据具体的实现，归并排序包括”<strong>从上往下</strong>“和”<strong>从下往上</strong>“2种方式。</p>
+<p><strong>从下往上的归并排序</strong>：将待排序的数列分成若干个长度为1的子数列，然后将这些数列两两合并；得到若干个长度为2的有序数列，再将这些数列两两合并；得到若干个长度为4的有序数列，再将它们两两合并；直接合并成一个数列为止。这样就得到了我们想要的排序结果。</p>
+<p><img src="C:\Users\陈思思\AppData\Roaming\Typora\typora-user-images\1559186472163.png" alt="1559186472163"></p>
+<p><img src="C:\Users\陈思思\AppData\Roaming\Typora\typora-user-images\1559186492300.png" alt="1559186492300"></p>
+<h2 id="基数排序"><a href="#基数排序" class="headerlink" title="基数排序"></a>基数排序</h2><p>基数排序(Radix Sort)是<strong>桶排序</strong>的扩展，它的基本思想是：将整数按位数切割成不同的数字，然后按每个位数分别比较。<br>具体做法是：将所有待比较数值统一为同样的数位长度，数位较短的数前面补零。然后，从最低位开始，依次进行一次排序。这样从最低位排序一直到最高位排序完成以后, 数列就变成一个有序序列。</p>
+<p><img src="C:\Users\陈思思\AppData\Roaming\Typora\typora-user-images\1559186647827.png" alt="1559186647827"></p>
 
       
     </div>
@@ -643,15 +696,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/18/instruction/" rel="next" title="第一次搬砖">
-                <i class="fa fa-chevron-left"></i> 第一次搬砖
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/18/instruction/" rel="prev" title="第一次搬砖">
+                第一次搬砖 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -840,7 +893,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#堆"><span class="nav-number">1.</span> <span class="nav-text">堆</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#栈"><span class="nav-number">2.</span> <span class="nav-text">栈</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#链表"><span class="nav-number">3.</span> <span class="nav-text">链表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#矩阵"><span class="nav-number">4.</span> <span class="nav-text">矩阵</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#树"><span class="nav-number">5.</span> <span class="nav-text">树</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#哈夫曼编码（树）"><span class="nav-number">6.</span> <span class="nav-text">哈夫曼编码（树）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#排序"><span class="nav-number">7.</span> <span class="nav-text">排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查找"><span class="nav-number">8.</span> <span class="nav-text">查找</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库"><span class="nav-number">9.</span> <span class="nav-text">数据库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#进程线程"><span class="nav-number">10.</span> <span class="nav-text">进程线程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IP地址"><span class="nav-number">11.</span> <span class="nav-text">IP地址</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#协议"><span class="nav-number">12.</span> <span class="nav-text">协议</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#散列函数"><span class="nav-number">13.</span> <span class="nav-text">散列函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux"><span class="nav-number">14.</span> <span class="nav-text">Linux</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#排序方法总结-–-排序过程"><span class="nav-number">1.</span> <span class="nav-text">排序方法总结 – 排序过程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#直接插入"><span class="nav-number">1.1.</span> <span class="nav-text">直接插入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shell-排序"><span class="nav-number">1.2.</span> <span class="nav-text">shell 排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#直接选择排序"><span class="nav-number">1.3.</span> <span class="nav-text">直接选择排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#堆排序"><span class="nav-number">1.4.</span> <span class="nav-text">堆排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#冒泡排序"><span class="nav-number">1.5.</span> <span class="nav-text">冒泡排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快速排序"><span class="nav-number">1.6.</span> <span class="nav-text">快速排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#归并排序"><span class="nav-number">1.7.</span> <span class="nav-text">归并排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基数排序"><span class="nav-number">1.8.</span> <span class="nav-text">基数排序</span></a></li></ol></li></ol></div>
             
 
           </div>
